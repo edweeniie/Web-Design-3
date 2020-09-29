@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#F2EDE9;
+	font-family: 'Rye', cursive;
+}
+
+body h5 {
+	font-family: 'Fredericka the Great', cursive;;
+}
+body p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav li {
+	font-size: 15pt;}
+
+
+nav .navbar-brand img {
+			  max-width:45px;
+
+		  }
+
+section.jumbotron {
+	background-size:cover;
+	background-position:center;
+}
+
+card {
+	padding: 0;
+	margin: 1rem;
+}
+
+.row-cols-md-2 > * {
+	flex: 0 0 46%;
+}
+
+nav ul {
+	font-size: 30px;
+	list-style: none;
+	padding:0px;
+}
+
+
+nav ul li {
+	display: inline-block
+}
+
+.bg-danger {
+	background-color: #000!important;
+}
