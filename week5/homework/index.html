@@ -168,7 +168,7 @@ lighter roast Coffee. Intoxicating aroma. A DG Fan favorite!</p>
           <div class="col-md-4 mb-3">
             <label for="state">State</label>
             <select class="custom-select d-block w-100" id="state2" required>
-              <option value="">Choose...</option>
+              <option value="CA">California</option>
               <option>California</option>
             </select>
             <div class="invalid-feedback">
@@ -256,24 +256,40 @@ lighter roast Coffee. Intoxicating aroma. A DG Fan favorite!</p>
 	<script type="text/javascript">
 		$(document).ready (function(){
 			$('#same-address').click(function(){
-				if($('input[name="same-address"]').is(':checked')){
-					$('#address').val($('#address02').val());
-					$('#address2').val($('#address002').val());
-					$('#country').val($('#country2').val());
-					$('#state').val($('#state2').val());
-					$('#zip').val($('#zip2').val());
+				if($('#same-address').is(':checked')){
+					$('#address02').val($('#address').val());
+					$('#address002').val($('#address2').val());
+					$('#country2').val($('#country').val());
+					$('#state2').val($('#state').val());
+					$('#zip2').val($('#zip').val());
 				}
 				else{ 
-					$('#address').val("");
-					$('#address2').val("");
-					$('#country').val("");
-					$('#state').val("");
-					$('#zip').val("");
+					$('#address02').val("");
+					$('#address002').val("");
+					$('#country2').val("");
+					$('#state2').val("");
+					$('#zip2').val("");
 				}
 			})
 		})
 	
-		
+		(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 	
 	</script>
 
