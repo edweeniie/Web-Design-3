@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet" type="text/css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Quicksand:wght@300&family=Rye&display=swap" rel="stylesheet">
+<title>form hw</title>
+</head>
+
+<body>
+	
+	<header>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <a class="navbar-brand" href="#"><img src="logo.png" alt="our awesome logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Menu <span class="sr-only">(current)</span></a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+	   <span class="navbar-text">
+      	<ul>
+					<li><i class="fab fa-facebook fa-lg"></i></li>
+					<li><i class="fab fa-instagram fa-lg"></i></li>
+					<li><i class="fab fa-twitter fa-lg"></i></li>
+				</ul>
+    </span>
+  </div>
+</nav>
+	  
+	
+	
+	</header>
+	
+	
+	<main>
+		<div class="container">
+			
+			<div class="row mb-3"><i class="fas fa-chevron-left fa-2x"></i><div class="h4 text-muted" style="padding-left: 7px; padding-top: 2px">Back</div></div>
+			
+			
+			<div class="row">
+				<div class="col-md-4 mb-4">
+				<img class="img-fluid" src="coffee.jpg">
+					<h4 class="pt-3" style="font-size: 20pt">House Blend <small class="text-black-50" style="padding-left:2px">x1</small></h4>
+					<p>Our own Breakfast Blend. Rich, Silky Smooth, Flavorful Light
+Roast. For those that want a robust cup of coffee but prefer a
+lighter roast Coffee. Intoxicating aroma. A DG Fan favorite!</p>
+				</div>
+			
+		
+			<div class="col-md-8 ">
+				<h4 class="mb-3 header">Shipping address</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row shipping">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 shipping">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3 shipping">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row shipping">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+		  
+		   <div class="custom-control custom-checkbox shipping">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <hr class="mb-4">
+       
+      
+		  <h4 class="mb-3 header">Billing address</h4>
+     
+
+        <div class="mb-3 shipping">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address02" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3 shipping">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address002" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row shipping">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country2" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state2" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip2" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+		  
+        <hr class="mb-4">
+
+        <h4 class="mb-3 header">Payment</h4>
+
+        <div class="d-block my-3 shipping">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row shipping">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 shipping">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row shipping">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit"><span>Continue to checkout</span></button>
+      </form>
+    </div>
+  </div>
+	</div>		
+
+		
+	
+	
+	
+	</main>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+			   <script src="https://kit.fontawesome.com/63069b6b4b.js" crossorigin="anonymous"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready (function(){
+			$('#same-address').click(function(){
+				if($('input[name="same-address"]').is(':checked')){
+					$('#address').val($('#address02').val());
+					$('#address2').val($('#address002').val());
+					$('#country').val($('#country2').val());
+					$('#state').val($('#state2').val());
+					$('#zip').val($('#zip2').val());
+				}
+				else{ 
+					$('#address').val("");
+					$('#address2').val("");
+					$('#country').val("");
+					$('#state').val("");
+					$('#zip').val("");
+				}
+			})
+		})
+	
+		
+	
+	</script>
+
+</body>
+</html>
