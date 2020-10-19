@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.bg-dark {
+	background-color: black!important;
+	opacity:70%;
+}
+
+.navbar-brand {
+	color:#FFF3BB!important;
+}
+
+/*#EBCD63*/
+.navbar-toggler-icon{
+	background-image: url("images/menu.png")!important;
+	border: none;
+}
+
+.navbar-toggler{
+	border: none!important;}
+
+.card {
+	border:none!important;
+}
+
+.btn-warning {
+	background-color:#EBCD63!important;
+	color:white!important;
+	
+}
+
+.text-warning {
+	color:#EBCD63!important
+}
+
+.btn-dark{
+	background-color:#161616!important;
+	color:#626262!important;
+}
+
+h6 {
+	font-weight:300!important;
+}
+
+.card-img-top {
+	 border-radius: 50%!important;
+	 width:80%!important;
+	display: block!important;
+	margin:0 auto!important;}
+
+
+footer {
+	background-color: #111111!important;
+	padding-bottom: 20px!important;
+	margin-top:100px!important;
+	
+}
+
+.newsletter {
+		padding-left:100px!important;
+		padding-right:100px!important;
+	
+}
+.newsletter2 {
+		padding-left:50px!important;
+		padding-right:50px!important;
+}
+
+.classJumbo {
+	background-size:cover;
+	background-position: center;
+	height:600px;
+}
+
+.aboutJumbo {
+	background-size:cover;
+	background-position: center;
+	height:400px;
+}
+
+.find {
+	margin-top: 300px;
+	margin-right:40px;
+	background-color: #111111;
+}
+
+.teacherbtn {
+	background-color:transparent!important;
+	color:#292929!important;
+	border:none;
+}
+
+.teacherbtn:active, .teacherbtn:hover  {
+	background-color:#EBCD63!important;
+	color:white!important;
+}
+
+.teacherpics img {
+	border-radius: 50%;
+}
+
+
+
+@media (min-width: 992px) {
+
+.newsletter {
+	padding-left:300px!important;
+	padding-right:300px!important;
+}
+
+	.newsletter2 {
+		padding-left:250px!important;
+		padding-right:250px!important;
+	}
+	
+	.find {
+	margin-top: 270px;
+
+}
+}
+
+
+

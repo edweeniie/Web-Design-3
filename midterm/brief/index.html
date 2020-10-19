@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+	  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+  <link href="mystyle.css" rel="stylesheet" type="text/css">
     <title>Midterm</title>
 	  
 	  <style>
@@ -20,30 +21,44 @@
 		  }
 	  
 	  </style>
+	
   </head>
   <body>
+	  
+	  
+	  
+	  
+<div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert">
+  <strong>In-person classes put on hold!</strong> Click <a href="#">here</a> to learn more.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+	  
+	  
+	  
  <header>
-	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
 		  <a class="navbar-brand" href="#"><h1 style="font-family: 'Lobster', cursive;">Gold Sonata Inc</h1></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 		  
-		<!-- make nav show current page with gold color + add the other pages -->
+		
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
       <li class="nav-item active">
-        <a class="nav-link text-light" href="#">Menu <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="classes.html">Classes</a>
       </li>
 		 <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="about.html">About</a>
       </li>
 		 <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="teachers.html">Teachers</a>
       </li>
     </ul>
   </div>
@@ -70,8 +85,8 @@
       
 		<div class="w-100 carousel-image" style="background-image: url('images/mink-mingle-HRyjETL87Gg-unsplash.jpg');"></div>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5>Music Lessons</h5>
+        <p>Music Education for All Ages. Online or In-Person.</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -79,8 +94,8 @@
 		
       	<div class="w-100 carousel-image" style="background-image: url('images/james-stamler-k3heD_KwH0A-unsplash.jpg');"></div>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h5>Online Classes</h5>
+        <p>Schedule a lesson with our online teachers!</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -88,8 +103,8 @@
 		
 			<div class="w-100 carousel-image" style="background-image: url('images/paulette-wooten-FMiczIq8orU-unsplash.jpg');"></div>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h5>Record at our studio</h5>
+        <p>See our guidelines for in-person lessons.</p>
       </div>
     </div>
   </div>
@@ -108,18 +123,20 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading  display-3 mb-5 text-muted">Try our dark coffee. <span class="text-dark">It’ll blow your mind.</span></h2>
-        <p class="lead text-black-50">Sit sweet, caramelization viennese filter flavour rich brewed. Cup mocha viennese cream beans aged and at galão grounds siphon. Cortado id brewed acerbic crema barista, roast con panna strong cup froth.</p>
+        <h2 class="featurette-heading  display-3 mb-3 " style="font-family: 'Sansita Swashed', cursive; font-size: 50pt;">Welcome to our music school!</h2>
+        <p class="lead text-black-50">This fall we are offering both online and in-person lessons and classes so teachers and families can choose what is right for them. For in-person instruction we have numerous  safety protocols in place.
+</p>
+		   <a href="#" class="btn btn-warning"><h6 class="text-white mb-0">Sign up for a class</h6></a>
       </div>
       <div class="col-md-5">
        		<img class="img-fluid" src="images/marius-masalar-rPOmLGwai2w-unsplash.jpg">
       </div>
     </div>
 
-    <hr class="featurette-divider my-5 ">
+    <hr class="featurette-divider my-5 pb-5">
 		</section>
 		
-		<div class="container">
+		<div class="container pt-5">
 			<div class="row">
 				<div class="col-4 text-center"><img src="images/music-book.png"></div>
 				<div class="col-4 text-center"><img src="images/music-note.png"></div>
@@ -127,77 +144,93 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-12 text-center mt-5 p-3"><p>Sit sweet, caramelization viennese filter flavour rich brewed. Cup mocha viennese cream beans aged and at galão grounds siphon. Cortado id brewed acerbic crema barista, roast con panna strong cup froth.Sit sweet, caramelization viennese filter flavour rich brewed. Cup mocha viennese cream beans aged and at galão grounds siphon. Cortado id brewed acerbic crema barista, roast con panna strong cup froth.</p></div>
+				<div class="col-12 text-center mt-4 p-3">
+					<h3 class="mb-3 " style="font-family: 'Sansita Swashed', cursive;">Our Beliefs</h3>
+					<p class="p-5 mt-n5 text-black-50  text-justify">Music instruction is more important than ever now. It offers students regular interaction with a teacher who is focused only on them, provides an individualized course of study, and gives students a pleasant and engaging activity they can do independently at home. We offer several performance opportunities throughout the year for our students enrolled in private instrumental or vocal instruction. Our recitals are now online and we’ve added virtual recording sessions to our offerings, so our students are keeping their performance skills sharp! Mixed Recitals bring together students of different instruments and teachers to perform for each other, family and friends. </br> </br> In addition to performances, we offer games, contests, and challenges to keep our students motivated to practice and improve throughout the year. Some of these include Scale Olympics, held concurrently with the summer or winter Olympics, the yearlong Trophy Club, where students strive to memorize and perform 10 pieces, Rhythm Challenge, and the Circle of Fifths theory Game. Many of our students have gathered quite a collection of pins, ribbons, and trophies over the years!Several of our teachers enroll their more motivated students in outside adjudications such as Royal School, MTAC, and National Association of Teachers of Singing, where they can receive outside feedback and progress through a graded system.</p></div>
 			</div>
-		
+		 <hr class="featurette-divider my-5 pb-5 mt-n3">
 		</div>
 		
-		 <div class="container">
-	  <div class="row row-cols-1 row-cols-md-2 align-item-stretch">
-  <div class="col-lg-4 mb-4 card">
+		 <div class="container mt-5 mb-5 pb-5">
+			 <h3 class="pb-5 text-center mb-5" style="font-family: 'Sansita Swashed', cursive;">Popular Classes</h3>
+	  <div class="row row-cols-1 row-cols-md-2 align-item-stretch ">
+  <div class="col-lg-4 mb-4 card text-center ">
     
-      <img src="mush1.jpg" class="card-img-top" alt="...">
+      <img src="images/card1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Piano Lessons</h5>
+        <p class="card-text text-black-50">Kids, Teens, Adults</p>
+		    <a href="#" class="btn btn-warning"><h6 class="text-white mb-0">See Classes</h6></a>
       </div>
     
   </div>
-  <div class="col-lg-4 mb-4 card">
+  <div class="col-lg-4 mb-4 card text-center">
     
-      <img src="mush2.jpg" class="card-img-top" alt="...">
+      <img src="images/card2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Cello Lessons</h5>
+        <p class="card-text text-black-50">Teens, Adults</p>
+		    <a href="#" class="btn btn-warning"><h6 class="text-white mb-0">See Classes</h6></a>
       </div>
    
   </div>
-  <div class="col-lg-4 mb-4 card">
+  <div class="col-lg-4 mb-4 card text-center">
     
-      <img src="mush3.jpg" class="card-img-top" alt="...">
+      <img src="images/card3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Drum Lessons</h5>
+        <p class="card-text text-black-50">Kids, Teens, Adults</p>
+		    <a href="#" class="btn btn-warning"><h6 class="text-white mb-0">See Classes</h6></a>
       </div>
     
   </div>
+		  <div class="col-lg-12 mb-4 text-center text-muted mt-n3">See More...</div>
 </div>
 </div>	  
 		
 	  </main>
 	  
+	 
 	  
-<!--	fix form, make the inputs smaller, more aligned, also the social media make sure its centered at bottom, and awkward white line at bottom-->
 	  
-	  
-		<footer style="background-color: #111111">
+		<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h3 class="mb-3 header">Subscribe to our newsletter!</h3>
+						<h3 class="mb-3 header text-white text-center mt-5" style="font-family: 'Lobster', cursive;">Subscribe to our newsletter!</h3>
 						<form class="needs-validation" novalidate>
 							<div class="row">
-								 <div class="col-md-6 mb-3">
-            						<label for="name">Name</label>
-           							<input type="text" class="form-control" id="name" placeholder="" value="" required>
+								 <div class="col-md-12 mb-3 form-group newsletter">
+            						
+           							<input type="text" class="form-control" id="name" placeholder="Name" value="" required>
             							<div class="invalid-feedback">Valid first name is required.</div>
           						</div>
 								
-          						<div class="col-md-6 mb-3">
-            						<label for="emailAddress">Email Address</label>
-            						<input type="email" class="form-control" id="emailAddress" placeholder="" value="" required>
+          						<div class="col-md-12 mb-3 form-group newsletter2">
+            						
+            						<input type="email" class="form-control" id="emailAddress" placeholder="Email Address" value="" required>
            								<div class="invalid-feedback">Valid email address is required.</div>
           						</div>
 							
 							</div>
 							
 							
-						<div class="custom-control custom-checkbox shipping">
+<!--
+						<div class="custom-control custom-checkbox shipping text-center">
+							<h4 class="mb-3 header text-center text-white-50" style="font-weight:200; font-size: 18pt;">Update me on...</h4>
           					<input type="checkbox" class="custom-control-input" id="same-address">
           					<label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
         				</div>
-						
-							  <button class="btn btn-primary btn-lg btn-block" type="submit"><span>Subscribe</span></button>
+-->
+					<div class="text-center">
+						<h4 class="mb-3 header text-center text-white-50" style="font-weight:200; font-size: 18pt;">Update me on...</h4>
+							<div class="btn-group mb-5" role="group" aria-label="Basic example">
+  								<button type="button" class="btn btn-dark">Coupons</button>
+  								<button type="button" class="btn btn-dark">Open slots</button>
+  								<button type="button" class="btn btn-dark">Events</button>
+							</div>
+					</div>			
+							  <button class="btn btn-warning btn-lg btn-block m-auto js-modal-launch" style="width:200px;" type="submit"><span class="text-white">Subscribe</span></button>
 						</form>
 					
 					</div>
@@ -206,14 +239,41 @@
 			
 			
 			</div>
-	  			<ul>
-					<li><i class="fab fa-facebook fa-lg"></i></li>
-					<li><i class="fab fa-instagram fa-lg"></i></li>
-					<li><i class="fab fa-twitter fa-lg"></i></li>
+	  			<ul class="list-inline text-center mt-5">
+					<li class="list-inline-item"><i class="fab fa-facebook fa-3x "></i></li>
+					<li class="list-inline-item"><i class="fab fa-instagram fa-3x"></i></li>
+					<li class="list-inline-item"><i class="fab fa-twitter fa-3x"></i></li>
 				</ul>
 	  
 	  
 	  </footer>
+	  
+	  
+	  
+	      <!-- modal -->
+	  
+	  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Sansita Swashed', cursive;font-size: 28pt">Thanks for Subscribing!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <div class="col-10 pr-5">
+		  <p class="text-muted">Thank you for subscribing to the Gold Sonata Inc. Newsletter! Your newsletter will be delivered shortly to the email provided!</p></div>
+		  
+        <img class="float-right col-6" src="images/live-music.png" style="width:100px;">
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Continue browsing</button>
+      </div>
+    </div>
+  </div>
+</div>
 		
 		    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
