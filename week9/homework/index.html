@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+	
+	<style>
+		body {
+			margin:0px;
+		}
+		h1 {
+			text-align: center;
+			color:#665E85;
+		}
+		.icon {
+			display:block;
+			margin: 0 auto;
+			width:100px;
+			padding-top:50px;
+		
+		}
+		
+		.gradient {
+			background-image: linear-gradient(to bottom, hsl(30, 80%, 80%), hsl(150, 80%, 80%), hsl(290, 50%, 90%))
+		}
+		
+		main {
+			padding: 0 100px;
+		}
+		nav a {
+			text-decoration: none;
+			font-size: 25px;
+			display: block;
+			padding: 20px;
+			text-align: center;
+			color:#FFFFFF;
+			border-bottom: 3px solid white;
+			transition: border-bottom-color 800ms, background-color 1500ms;
+		}
+		
+		nav a:hover {
+			border-color:hotpink;
+			background-color: hsla(342,100%,67%,0.20)
+			}
+
+			.row {
+  					display: grid;
+ 					padding: 30px;
+  					grid-gap:50px 30px; 
+}
+
+			img {
+  					width: 100%;
+}
+		
+		.gray {
+			transition: all 200ms ease-in;
+  			filter: grayscale(1) 
+		}
+		.gray:hover {
+			filter: grayscale(0) opacity(1);}
+		
+		
+		.big:hover {
+			 transform: scale(1.2);
+		}
+		
+		.seperator {
+			display: flex;
+			justify-content: center;
+			padding: 25px 0;
+		}
+		
+		.icecream {
+		 width: 150px;
+  height: 150px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+ 
+  margin: 10px;
+			border-radius: 50%
+		}
+		.icecream:after {
+			width: 90%;
+  height: 90%;
+  display: block;
+  white-space: pre;
+  font: 15pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+			  transition: opacity 1s .5s;
+		}
+		
+		.icecream:hover {
+			 box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+		}
+		
+		.icecream:hover::after {
+			opacity: 0;
+  transition: opacity .5s;
+		}
+		
+		#cookies {
+			background-image: url("icecream1.jpg");
+			background-size: cover;
+			 color: rgba(199, 249, 204, .9);
+		}
+		
+		#cookies::after {
+  content: 'Ice Cream';
+}
+
+		
+		.icon_spin {
+			overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+		}
+		
+		.icon_spin:hover {
+transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+		
+		@media (min-width: 600px) {
+  .row { grid-template-columns: repeat(2, 1fr); }
+}
+		@media (min-width: 900px) {
+  .row { grid-template-columns: repeat(3, 1fr); }
+}
+			
+			
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<header>
+				<nav class="gradient">
+					<img class=" icon icon_spin" src="clown.png">
+					<h1>Dizzy's Icecream</h1>
+					
+					<a href="#">menu ⌵</a>
+		
+				</nav>
+	
+	</header>
+	
+	
+	
+	<main>
+		<div class="seperator">
+			<div id="cookies" class="icecream"></div>
+		</div>
+		
+		<div class="row">
+				<img class= "gray" src="icecream1.jpg">
+				<img class= "big" src="icecream2.jpg">
+				<img class= "gray" src="icecream3.png">
+				<img src="icecream4.jpg">
+				<img src="icecream5.jpg">
+				<img src="icecream6.jpg">
+			</div>
+		
+		
+	</main>
+	
+	
+	
+</body>
+</html>
