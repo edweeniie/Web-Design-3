@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
+  overflow:hidden;
+	background-color: #121212;
+	 margin: 0;
+  padding: 0;
+}
+
+main {
+	padding-bottom:70px;
+}
+
+.title {
+	
+	color: beige;
+	float:right;
+	margin-right:-400px
+}
+
+#title {
+	animation: mymove 5s infinite;
+}
+@keyframes mymove {
+	 50% {font-size: 20px;}
+}
+
+
+nav {
+	margin-top:-350px;
+		margin-left:-70px
+}
+
+
+
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+.honey {
+	margin-top:200px;
+}
+
+main ul {
+  width:70vmin;
+  height:70vmin;
+  position:relative;
+}
+
+main li { 
+  /*
+    |a|d|a|
+    -------  -           
+    |/   \|  | 0.5h
+    |\   /|  ^          
+    ------- 
+    |  w  |
+  
+    a = 0.5h/tan60 = 0.28867513459h
+    d = 0.5h/sin60 = 0.57735026919h
+    w = a + d + a  = 1.15470053838h
+  
+    [zoom out]
+  
+        |a|_d_|         _____    _
+        /|     \       /     \   |
+  ang=60_|      \__d__/       \  | h     
+       \        /     \       /  |
+        \_____|/|      \_____/  _|
+              a     
+       |--------|
+           w
+  */
+  --h: calc(100% / 3);
+  --w: calc(1.15470053838 * var(--h));
+  --a: calc(0.28867513459 * var(--h));
+  --d: calc(0.57735026919 * var(--h));
+  height:var(--h);
+  width:var(--w);
+  position:absolute;
+}
+
+main img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  /* 
+  
+   [clip-path coordinates]
+  
+    --A-F--
+   B|/   \|E    coord.
+    |\   /|       A(a/w, 0)
+    --C-D--       B(0, 50%)
+                  C(a/w, 100%)
+                  D(100% - a/w, 100%)
+                  E(100%, 50%)
+                  F(100% - a/w, 0)
+                where a/w = 0.24999999999
+  */
+  --aw:24.99999999999%;
+  clip-path:polygon(
+    var(--aw) 0,
+    0 50%,
+    var(--aw) 100%,
+    calc(100% - var(--aw)) 100%,
+    100% 50%,
+    calc(100% - var(--aw)) 0
+  );
+}
+
+::marker {
+	color:transparent
+}
+
+main li:nth-of-type(1) {
+  left:calc(50% - var(--a) - var(--d) * 0.5);
+  top:0;
+}
+main li:nth-of-type(2) {
+  left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+  top:calc(var(--h) * 0.5);
+}
+main li:nth-of-type(3) {
+  left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+  top:calc(var(--h) * 1.5);
+}
+main li:nth-of-type(4) {
+  left:calc(50% - var(--a) - var(--d) * 0.5);
+  top:calc(var(--h) * 2);
+}
+main li:nth-of-type(5) {
+  left:calc(50% + var(--d) * 0.5);
+  top:calc(var(--h) * 0.5);
+}
+main li:nth-of-type(6) {
+  left:calc(50% + var(--d) * 0.5);
+  top:calc(var(--h) * 1.5);
+}
+
+
+
+/* 
+style 
+*/
+
+main ul {
+  filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+}
+
+main li:hover {
+  filter:drop-shadow(0 0 10px white);
+  z-index:10;
+}
+
+/*
+anim
+*/
+
+main ul {
+  animation:r 4s forwards;
+} @keyframes r {
+  from {transform:rotate(180deg)}
+  to {transform:rotate(0)}
+}
+
+main li {
+  animation:ir 4s forwards;
+} @keyframes ir {
+  from {transform:rotate(-360deg)}
+  to {transform:rotate(0)}
+}
+
+
+@media (min-width:600px) {
+	nav {
+	margin-top:-375px;
+		margin-left:-85px
+}
+
+	.title {
+		margin-right:-520px
+	}}
+
+
+@media (min-width:900px) {
+	nav {
+	margin-top:-375px;
+		margin-left:-395px
+}
+
+
+	.title {
+		margin-right:-850px
+	}
+}
