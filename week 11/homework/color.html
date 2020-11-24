@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ball Game</title>
+	
+		<style>
+		
+			
+		img {
+				width: 20%;
+			}
+			
+		body {
+			margin:0;
+			background-image: url("ivana-cajina-asuyh-_ZX54-unsplash.jpg");
+			background-size: cover;
+			
+		}
+		canvas {
+			border: 1px solid black;
+			margin: 0px 50px;
+			display: block;
+			margin: 0 auto;
+			height: 500px
+			
+			
+		}
+	
+			.spaceship, .text {
+				display: flex;
+				justify-content: center;
+				height: 200px;
+				padding-bottom: 200px;
+				padding-top: 20px;
+				
+			}
+			
+			.text {
+				margin-top:-200px;
+				
+				font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+				font-weight: 200;
+			}
+			a {
+				color:azure;}
+			a:link {
+				color:azure;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #6ED8FF;
+  				background-color: transparent;
+  				text-decoration: underline;
+			}
+			
+			
+			
+	</style>
+	
+</head>
+
+<body>
+	
+	
+	<canvas id="Game" width="800" height="600">
+	
+	This part needs a newer browser. 
+	
+	</canvas>
+	
+	
+	<div id="ship" class = "spaceship">
+		<img src="spaceship.png">
+	</div>
+	
+	<div id="text" class = "text">
+		<a href ="index.html"><h1> Click here to change planets color!</h1></a>
+		</div>
+	
+	<script src="canvass.js"></script>
+	
+</body>
+</html>
