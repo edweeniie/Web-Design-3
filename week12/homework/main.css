@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+audio{
+	background-color:black;
+}
+img{
+	width:50%;
+}
+body {
+	background-color:black;
+	font-family: "Trajan Pro 3", "Trajan Pro 3 Black", "Trajan Pro 3 Bold", "Trajan Pro 3 ExtraLight", "Trajan Pro 3 Light", "Trajan Pro 3 Semibold";
+}
+
+body h5, .header {
+	font-family: "Trajan Pro 3", "Trajan Pro 3 Black", "Trajan Pro 3 Bold", "Trajan Pro 3 ExtraLight", "Trajan Pro 3 Light", "Trajan Pro 3 Semibold";
+}
+body p {
+	font-family: lato; 
+}
+
+nav li {
+	font-size: 12pt;}
+
+.navbar-text {
+	font-size: 20pt;
+}
+
+main{
+	padding-top:100px;
+}
+.navbar {
+	padding: .1rem 1rem!important;
+}
+nav .navbar-brand img {
+			  max-width:45px;
+
+		  }
+
+
+nav ul {
+	font-size: 30px;
+	list-style: none;
+	padding:0px;
+}
+
+
+nav ul li {
+	display: inline-block
+}
+
+.bg-danger {
+	background-color: #000!important;
+}
+
+.text-warning {
+	color:#E7D69F!important;
+}
