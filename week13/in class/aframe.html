@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A-frame example</title>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+	<a-assets>
+		<img id="texture" src="boxtexture.jpg">
+	
+	</a-assets>
+	
+	
+	<a-scene background="color: #46D0E0 " fog>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" src="#texture" shadow></a-box>
+	  <a-sphere position="0 5.25 -5" radius=".75" color="#FFEC4F" shadow></a-sphere>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color="#398044" shadow></a-plane>
+    </a-scene>
+	
+	
+</body>
+</html>
+
+
+<!--<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>-->
