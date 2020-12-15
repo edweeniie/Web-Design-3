@@ -94,6 +94,8 @@ footer {
 
 
 
+
+
 .minis {
 	list-style: none;
 	padding-right:40px;
@@ -204,11 +206,13 @@ figure img:hover {
 	align-content: center;
 	text-align: center;
 	color:#93A993;
+	 margin-left: -35px;
 
 }
 .mininav li {
 	display:inline-block;
-	padding:0 10px;
+	padding:0 5px;
+	
 	
 }
 
@@ -293,11 +297,16 @@ figure img:hover {
 }
 
 hr {
-	margin-top:210px
+	margin-top:20px
 }
 
 
 @media (min-width:600px) {
+	
+	hr {
+	margin-top:210px
+}
+
 	.similar {
 		height:600px
 	}
@@ -333,7 +342,7 @@ hr {
 	}
 	
 	footer {
-		height:600px
+		height:500px
 	}
 	
 	.footerlinks h2 {
@@ -343,15 +352,15 @@ hr {
 	
 	.footerlinks {
 	font-size:15pt;
-	margin-top:350px;
+	margin-top:250px;
 }
 	.map {
-		margin-top:100px;
-		width:90%;
+		margin-top:50px;
+		width:100%;
 		margin-left:-40px
 	}
 	.floweroutline {
-		margin-top:120px
+		margin-top:80px
 	}
 	
 	.plantminis {
