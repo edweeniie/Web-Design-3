@@ -7,24 +7,287 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <title>Shipping</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&display=swap" rel="stylesheet">
+<title>Shipping</title>
   </head>
   <body>
     
+	<header>
+	  
+	  <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-white">
+		  <a class="navbar-brand" href="index.html"><h1 style="font-weight: 700">Las Hojitas</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><img src="images/tobacco.png"></span>
+  </button>
+
+		  
+		
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link green" href="index.html">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="products.html">Plants</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link lastspace" href="#"><img class="cart" src="images/cart-outline.svg"></a>
+      </li>
+		<li><button type="button" class="btn btn-primary counting" data-toggle="modal" data-target="#cart"><span class="total-count"></span></button></li>
+		<div class="row">
+        
+          
+    </div>
+    </ul>
+  </div>
+</nav>
+	
+	</header>
+
+
+	  
+	  <main>
+	  
+	  	<div class="container mt-5 ml-sm-3">
+			
+			 <div class="row">
+			  	<div class="col">
+				  <h2 style="font-size: 15pt; " class="pt-5 mt-5"><span style="color:#788274;"><i class="fas fa-chevron-left fa-3"></i> <a class="backtoplants" href="products.html">products/</a>fiddleleaf/</span>checkout</h2>
+				  	  </div></div>
+			
+			
+		  <div class="row">
+			<div class="col-md-4">
+			  <img class="fluid" src="images/the-sill_fiddle-leaf-fig_variant_balboa_mint_720x.jpg">
+				<h2 class="mt-3">Fiddle Leaf <span class="float-right text-muted">x 2</span></h2>
+			  	<p class="text-muted">The Fiddle Leaf Fig is famous for its broad, vibrant green leaves with prominent veining. It prefers a stable environment and can be fickle when temps fluctuate. Keep it in bright light, and water about once every 1–2 weeks. Arrives in a nursery grow pot nestled inside our ceramic planter.</p>
+				<div class="plantminis mt-5">
+					<img src="images/botanic.png">
+					<img src="images/icon1.png">
+					<img src="images/icon2.png">
+			  	</div>
+			  </div>
+				 
+				<div class="col-md-8 ">
+				<h1 class="mb-3 header">Shipping address</h1>
+                  <form method="POST" action="cake-order.php" enctype="multipart/form-data" class="needs-validation" id="myForm" novalidate>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputFirstname">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstname" required>
+                        <div class="invalid-feedback">Please tell us your name.</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLastname">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastname" required>
+                        <div class="invalid-feedback">Please tell us your name.</div>
+                      </div>
+                    </div>
+                   
+                
+                    <div class="form-group">
+                      <label for="billingAddress1">Address</label>
+                      <input type="text" class="form-control" id="billingAddress1" required>
+                      <div class="invalid-feedback">A valid address is required.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="billingAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="billingAddress2" placeholder="Apartment, studio, or floor" required>
+                      <div class="invalid-feedback">A valid address is required.</div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="billingCity">City</label>
+                        <input type="text" class="form-control" id="billingCity" required>
+                        <div class="invalid-feedback">A valid address is required.</div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="billingState">State</label>
+                        <select id="billingState" class="form-control" required>
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                          <div class="invalid-feedback">A valid address is required.</div>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="billingZip">Zip</label>
+                        <input type="text" class="form-control" id="billingZip" required>
+                        <div class="invalid-feedback">A valid address is required.</div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="billingCheck" required>
+                        <label class="form-check-label pb-3" for="billingCheck">
+                          Shipping address is the same as billing
+                        </label>
+                      </div>
+                    </div>
+                      
+                        
+               <hr class="mb-2">
+
+                    <h1 class="">Billing Address</h1>
+
+
+                    <div class="form-group">
+                      <label for="shippingAddress1">Address</label>
+                      <input type="text" class="form-control" id="shippingAddress1" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="shippingAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="shippingAddress2" placeholder="Apartment, studio, or floor" required>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="shippingCity">City</label>
+                        <input type="text" class="form-control" id="shippingCity" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="shippingState">State</label>
+                        <select id="shippingState" class="form-control" required>
+                          <option selected>Choose...</option>
+                          <option val="CA">California</option>
+                          <option val="NY">Michigan</option>
+                          <option val="OR">Pennsylvania</option>
+						  <option val="OR">North Carolina</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="shippingZip">Zip</label>
+                        <input type="text" class="form-control" id="shippingZip" required>
+                      </div>
+                
+                        </div>
+                      
+
+                      <hr class="mb-4">
+
+                    
+                        <h1>Payment</h1>
+                
+                        <div class="d-block my-3">
+                          <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked value='CC' required>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" value='DC' required>
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" aria-valuetext='PP' required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col form-group">
+                            <label for="cc-name">Name on card</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                              Name on card is required
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col form-group">
+                            <label for="cc-number">Credit card number</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Credit card number is required
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="cc-expiration">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Expiration date required
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Security code required
+                            </div>
+                         
+                        </div>
+					  </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block mt-5 mb-5">Submit Order</button>
+                  </form>
+       
+      </div>
+					 
+					 
+					 
+					 
+    </div>
+  </div>
+	
+				 
+				 
+				 
+				
+	  
+	  
+	  
+	  
+	  </main>
 
 	  
 	  
+	 
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-	  
-	  
-	  
-	  
-	  
-	  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
 
 
+
+				<script src="script.js"></script>
+				<script src="https://kit.fontawesome.com/63069b6b4b.js" crossorigin="anonymous"></script>
+	    
+<script>
+      console.log($(this).prop('checked'));
+      $('#billingCheck').click(function(){
+        if ($(this).prop('checked')){
+          $('#shippingAddress1').val($('#billingAddress1').val());
+          $('#shippingAddress2').val($('#billingAddress2').val());
+          $('#shippingCity').val($('#billingCity').val());
+          $('#shippingState').val($('#billingState').val());
+          $('#shippingZip').val($('#billingZip').val());
+        }
+
+        else {
+          $('#shippingAddress1').val('');
+          $('#shippingAddress2').val('');
+          $('#shippingCity').val('');
+          $('#shippingState').val('');
+          $('#shippingZip').val('');
+        }
+      })
+
+      let form = document.getElementById('myForm');
+      form.addEventListener("submit", function(evt){
+        if(form.checkValidity() === false) {
+          evt.preventDefault();
+          evt.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      })
+    </script>
   </body>
 </html>
